@@ -14,7 +14,10 @@ const display = () => {
     number: /[0-9]/,
     space: /\s/,
   };
-  if (
+  if(!username){
+    alert("Enter Username!")
+  }
+  else if (
     !(
       passReg.upper.test(password) &&
       passReg.lower.test(password) &&
