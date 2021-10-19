@@ -14,7 +14,7 @@ const display = () => {
     number: /[0-9]/,
     space: /\s/,
   };
-  if(!username){
+  if(username === null || !username){
     alert("Enter Username!")
   }
   else if (
